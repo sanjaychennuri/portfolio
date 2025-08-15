@@ -1,263 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CHENNURI SAI SANJEEV CHARAN KUMAR — Portfolio</title>
-  <meta name="description" content="Portfolio of CHENNURI SAI SANJEEV CHARAN KUMAR — AWS Cloud Enthusiast." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHENNURI SAI SANJEEV CHARAN KUMAR - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-    <div style="text-align:right; padding: 0.5rem; background:#f8f8f8;">
-      <a href="tel:+919390544485" style="margin:0 0.5rem; color:#333;" title="Call">
-        <i class="fas fa-phone"></i>
-      </a>
-      <a href="mailto:sanjaychennuri1418@gmail.com" style="margin:0 0.5rem; color:#333;" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://linkedin.com/in/sanjeevchennuri" target="_blank" style="margin:0 0.5rem; color:#0077b5;" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/sanjaychennuri" target="_blank" style="margin:0 0.5rem; color:#333;" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="assets/resume.pdf" download style="margin:0 0.5rem; color:#28a745;" title="Download Resume">
-        <i class="fas fa-file-download"></i>
-      </a>
-    </div>
-    
-  <!-- Floating gradient background blobs -->
-  <div class="bg-blur bg-1"></div>
-  <div class="bg-blur bg-2"></div>
-  <div class="bg-grid"></div>
-
-  <header class="container nav">
-    <div class="logo">Sanjeev<span>.</span></div>
-    <nav id="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#certs">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="menu" id="menuBtn" aria-label="Menu">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-      </svg>
-    </button>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section id="home" class="hero container">
-      <div class="hero-text">
-        <h1 class="hi">Hi, I'm <span class="name">CHENNURI SAI SANJEEV <br class="br-hide"> CHARAN KUMAR</span></h1>
-        <p class="role"><span id="typed"></span></p>
-        <p class="summary">
-          I’m an AWS Cloud Enthusiast focused on building clean, reliable front‑end experiences and deploying cloud‑ready apps.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn outline" href="#contact">Hire Me</a>
+    <header>
+        <div class="header-content">
+            <img src="profile.png" alt="Profile photo" class="avatar" />
+            <h1>CHENNURI SAI SANJEEV CHARAN KUMAR</h1>
+            <p>
+                Pileru, Andhra Pradesh | +91 93905 44485 | 
+                <a href="mailto:sanjaychennuri1418@gmail.com">sanjaychennuri1418@gmail.com</a> | 
+                <a href="https://www.linkedin.com/in/sanjeevchennuri" target="_blank">LinkedIn</a> | 
+                <a href="https://sanjaychennuri.github.io/portfolio/" target="_blank">Portfolio</a>
+            </p>
+            <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
         </div>
-        <div class="socials">
-          <a href="mailto:sanjaychennuri1418@gmail.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
-          </a>
-          <a href="tel:+919390544485" aria-label="Phone">
-            <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 7a1 1 0 0 1 1-1h2.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.24 1.01l-2.21 2.21z"/></svg>
-          </a>
-          <a href="https://linkedin.com/in/sanjeevchennuri" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M19 3A2.94 2.94 0 0 1 22 6v12a2.94 2.94 0 0 1-3 3H5a2.94 2.94 0 0 1-3-3V6a2.94 2.94 0 0 1 3-3h14M8.34 18V9.68H5.67V18h2.67m-1.33-9.42a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1M20 18v-4.8c0-3.2-1.7-4.68-3.97-4.68A3.42 3.42 0 0 0 13 10.47h-.07V9.68H10.3V18h2.67v-4.57c0-1.2.22-2.36 1.72-2.36 1.49 0 1.52 1.38 1.52 2.44V18H20z"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="hero-art reveal">
-        <img src="assets/profile.png" alt="Profile photo" class="avatar" />
-        <div class="card glass">
-          <p><strong>Location:</strong> Pileru, Andhra Pradesh</p>
-          <p><strong>Open to:</strong> Cloud & Front‑end roles</p>
-        </div>
-      </div>
-    </section>
+    </header>
 
-    <!-- ABOUT -->
-    <section id="about" class="section container">
-      <h2 class="section-title">About</h2>
-      <p class="lead">
-        B.Tech (CSE) graduate who enjoys transforming ideas into fast, accessible web interfaces and deploying them with AWS.
-        Beyond code, I value teamwork, learning quickly, and a positive, problem‑solving mindset.
-      </p>
-      <div class="about-grid">
-        <div class="about-card glass reveal">
-          <h3>Education</h3>
-          <ul>
-            <li><strong>MRIET, Hyderabad</strong> — B.Tech in CSE, CGPA 7.34 (2020–2024)</li>
-            <li><strong>Bhashyam Junior College, Tirupati</strong> — 10+2, 93.7% (2018–2020)</li>
-            <li><strong>Bhashyam High School, Tirupati</strong> — SSC, GPA 9.7 (2017–2018)</li>
-          </ul>
-        </div>
-        <div class="about-card glass reveal">
-          <h3>Strengths</h3>
-          <div class="chips">
-            <span class="chip">Quick Learner</span>
-            <span class="chip">Team Collaboration</span>
-            <span class="chip">Positive Attitude</span>
-          </div>
-          <h3 style="margin-top:1rem">Certifications</h3>
-          <ul class="two-col">
-            <li>AWS Cloud Computing — Tech Mahindra Smart Academy</li>
-            <li>Cloud Computing — NASSCOM</li>
-            <li>Cloud Computing — SkillUp</li>
-            <li>Python Essentials — Cisco NetAcad</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Passionate software developer with skills in web development, 
+                problem-solving, and creating user-friendly applications.
+            </p>
+        </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill glass reveal">
-          <h3>Programming</h3>
-          <div class="tags">
-            <span>Python</span>
-          </div>
-        </div>
-        <div class="skill glass reveal">
-          <h3>Front‑end</h3>
-          <div class="tags">
-            <span>HTML</span><span>CSS</span><span>Responsive UI</span><span>Accessibility</span>
-          </div>
-        </div>
-        <div class="skill glass reveal">
-          <h3>Databases</h3>
-          <div class="tags">
-            <span>MySQL</span>
-          </div>
-        </div>
-        <div class="skill glass reveal">
-          <h3>Cloud</h3>
-          <div class="tags">
-            <span>AWS</span><span>EC2</span><span>S3</span><span>VPC</span><span>IAM</span>
-          </div>
-        </div>
-        <div class="skill glass reveal">
-          <h3>Tools</h3>
-          <div class="tags">
-            <span>Git</span><span>Word</span><span>Excel</span><span>PowerPoint</span><span>Linux (Basics)</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, Java</li>
+                <li>React.js, Node.js</li>
+                <li>SQL, MongoDB</li>
+            </ul>
+        </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section container">
-      <h2 class="section-title">Projects</h2>
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card-badge">Web</div>
-          <h3>Tourism in India</h3>
-          <p>
-            Interactive tourism guide site featuring destinations, stays, and food spots across India.
-            Built with semantic HTML and modern CSS with an emphasis on usability and mobile‑first design.
-          </p>
-          <div class="tagline">HTML • CSS</div>
-        </article>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>
+                    Designed and developed a responsive personal portfolio website 
+                    using HTML, CSS, and JavaScript.
+                </p>
+                <a href="https://sanjaychennuri.github.io/portfolio/" target="_blank">View Project</a>
+            </div>
+        </section>
 
-        <article class="card reveal">
-          <div class="card-badge">AI</div>
-          <h3>Early Detection of Cancer using AI</h3>
-          <p>
-            Conceptual ML workflow for early cancer detection by analysing medical images and patient data.
-            Focused on data patterns and signal extraction to assist human experts.
-          </p>
-          <div class="tagline">Python • ML (Concept)</div>
-        </article>
-      </div>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Email: <a href="mailto:sanjaychennuri1418@gmail.com">sanjaychennuri1418@gmail.com</a><br />
+                Phone: +91 93905 44485<br />
+                LinkedIn: <a href="https://www.linkedin.com/in/sanjeevchennuri" target="_blank">linkedin.com/in/sanjeevchennuri</a><br />
+                Portfolio: <a href="https://sanjaychennuri.github.io/portfolio/" target="_blank">sanjaychennuri.github.io/portfolio</a>
+            </p>
+        </section>
+    </main>
 
-    <!-- ACHIEVEMENTS -->
-    <section id="achievements" class="section container">
-      <h2 class="section-title">Achievements</h2>
-      <ul class="timeline reveal">
-        <li><span>⭐⭐⭐⭐⭐</span> HackerRank — SQL (5‑Star)</li>
-        <li><span>⭐⭐⭐⭐⭐</span> HackerRank — Python (5‑Star)</li>
-        <li>1st Prize — Code Debugging, Technotsav (MRIET), 2022</li>
-      </ul>
-    </section>
+    <footer>
+        <p>&copy; 2025 CHENNURI SAI SANJEEV CHARAN KUMAR</p>
+    </footer>
 
-    <!-- CERTIFICATIONS -->
-    <section id="certs" class="section container">
-      <h2 class="section-title">Certifications</h2>
-      <div class="cards">
-        <article class="card reveal">
-          <h3>AWS Cloud Computing</h3>
-          <p>Tech Mahindra Smart Academy</p>
-        </article>
-        <article class="card reveal">
-          <h3>Cloud Computing</h3>
-          <p>NASSCOM</p>
-        </article>
-        <article class="card reveal">
-          <h3>Cloud Computing</h3>
-          <p>SkillUp</p>
-        </article>
-        <article class="card reveal">
-          <h3>Python Essentials</h3>
-          <p>Cisco NetAcad</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section container contact">
-      <h2 class="section-title">Contact</h2>
-      <p class="lead">Let’s talk about your next idea or internship opportunity.</p>
-      <div class="contact-cards">
-        <a class="card glass reveal" href="mailto:sanjaychennuri1418@gmail.com">
-          <strong>Email</strong>
-          <span>sanjaychennuri1418@gmail.com</span>
-        </a>
-        <a class="card glass reveal" href="tel:+919390544485">
-          <strong>Phone</strong>
-          <span>+91 93905 44485</span>
-        </a>
-        <a class="card glass reveal" target="_blank" rel="noopener" href="https://linkedin.com/in/sanjeevchennuri">
-          <strong>LinkedIn</strong>
-          <span>/in/sanjeevchennuri</span>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer container">
-    <p>© <span id="year"></span> Sanjeev. Built with HTML, CSS & JavaScript. Hosted on GitHub Pages.</p>
-    <button id="themeToggle" class="btn outline small">Toggle Theme</button>
-    <a href="#home" class="to-top" aria-label="Back to top">↑</a>
-  </footer>
-
-  <script src="script.js"></script>
-
-    <section id="quick-links" style="text-align:center; margin: 2rem 0;">
-      <a href="https://linkedin.com/in/sanjeevchennuri" target="_blank" style="margin:0 1rem; text-decoration:none; color:#0077b5; font-weight:bold;">
-        LinkedIn
-      </a>
-      <a href="https://github.com/sanjaychennuri" target="_blank" style="margin:0 1rem; text-decoration:none; color:#333; font-weight:bold;">
-        GitHub
-      </a>
-      <a href="assets/resume.pdf" download style="margin:0 1rem; padding:0.5rem 1rem; background:#28a745; color:white; border-radius:5px; text-decoration:none; font-weight:bold;">
-        Download Resume
-      </a>
-    </section>
-    
+    <script src="script.js"></script>
 </body>
 </html>
