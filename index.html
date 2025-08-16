@@ -20,14 +20,13 @@
   <style>
     html { scroll-behavior: smooth; }
     section { scroll-margin-top: 80px; }
-    .top-bar {
-      text-align: right; padding: 0.5rem; background: #f8f8f8;
-    }
-    .top-bar a {
-      margin: 0 0.5rem; color: #333; text-decoration: none;
-    }
+    .top-bar { text-align: right; padding: 0.5rem; background: #f8f8f8; }
+    .top-bar a { margin: 0 0.5rem; color: #333; text-decoration: none; display: inline-flex; align-items: center; }
     .cta a { margin-right: 1rem; display: inline-block; }
     .socials a { margin-right: 0.5rem; color: #333; text-decoration: none; font-size: 1.2rem; display: inline-flex; align-items: center; }
+    .social-link { display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.6rem 1.2rem; border-radius: 25px; background-color: #28a745; color: #fff; text-decoration: none; font-weight: 500; transition: 0.3s; min-width: 120px; text-align: center; }
+    .social-link:hover { background-color: #1e7a34; }
+    .social-link i { font-size: 1.1rem; }
   </style>
 </head>
 <body>
@@ -74,21 +73,11 @@
         </div>
 
         <div class="socials">
-          <a class="social-link" href="https://mail.google.com/mail/?view=cm&to=sanjaychennuri1418@gmail.com" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-envelope"></i> Email
-          </a>
-          <a class="social-link" href="tel:+919390544485">
-            <i class="fas fa-phone"></i> Phone
-          </a>
-          <a class="social-link" href="https://linkedin.com/in/sanjeevchennuri" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a class="social-link" href="https://github.com/sanjaychennuri" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a class="social-link" href="resume.pdf" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-file-alt"></i> Resume
-          </a>
+          <a class="social-link" href="https://mail.google.com/mail/?view=cm&to=sanjaychennuri1418@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Email</a>
+          <a class="social-link" href="tel:+919390544485"><i class="fas fa-phone"></i> Phone</a>
+          <a class="social-link" href="https://linkedin.com/in/sanjeevchennuri" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a class="social-link" href="https://github.com/sanjaychennuri" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+          <a class="social-link" href="resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Resume</a>
         </div>
       </div>
 
@@ -105,39 +94,89 @@
     <section id="about" class="section container">
       <h2 class="section-title">About</h2>
       <p class="lead">B.Tech (CSE) graduate who enjoys transforming ideas into fast, accessible web interfaces and deploying them with AWS. Beyond code, I value teamwork, learning quickly, and a positive, problem‑solving mindset.</p>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <h3>Education</h3>
+          <ul>
+            <li><strong>MRIET, Hyderabad</strong> — B.Tech in CSE, CGPA 7.34 (2020–2024)</li>
+            <li><strong>Bhashyam Junior College, Tirupati</strong> — 10+2, 93.7% (2018–2020)</li>
+            <li><strong>Bhashyam High School, Tirupati</strong> — SSC, GPA 9.7 (2017–2018)</li>
+          </ul>
+        </div>
+        <div class="about-card glass reveal">
+          <h3>Strengths</h3>
+          <div class="chips">
+            <span class="chip">Quick Learner</span>
+            <span class="chip">Team Collaboration</span>
+            <span class="chip">Positive Attitude</span>
+          </div>
+          <h3 style="margin-top:1rem">Certifications</h3>
+          <ul class="two-col">
+            <li>AWS Cloud Computing — Tech Mahindra Smart Academy</li>
+            <li>Cloud Computing — NASSCOM</li>
+            <li>Cloud Computing — SkillUp</li>
+            <li>Python Essentials — Cisco NetAcad</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- SKILLS SECTION -->
     <section id="skills" class="section container">
       <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill glass reveal">
+          <h3>Programming</h3>
+          <div class="tags"><span>Python</span></div>
+        </div>
+        <div class="skill glass reveal">
+          <h3>Front‑end</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>Responsive UI</span><span>Accessibility</span></div>
+        </div>
+        <div class="skill glass reveal">
+          <h3>Databases</h3>
+          <div class="tags"><span>MySQL</span></div>
+        </div>
+        <div class="skill glass reveal">
+          <h3>Cloud</h3>
+          <div class="tags"><span>AWS</span><span>EC2</span><span>S3</span><span>VPC</span><span>IAM</span></div>
+        </div>
+        <div class="skill glass reveal">
+          <h3>Tools</h3>
+          <div class="tags"><span>Git</span><span>Word</span><span>Excel</span><span>PowerPoint</span><span>Linux (Basics)</span></div>
+        </div>
+      </div>
     </section>
 
     <!-- PROJECTS SECTION -->
     <section id="projects" class="section container">
       <h2 class="section-title">Projects</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-badge">Web</div>
+          <h3>Tourism in India</h3>
+          <p>Interactive tourism guide site featuring destinations, stays, and food spots across India. Built with semantic HTML and modern CSS with mobile‑first design.</p>
+          <div class="tagline">HTML • CSS</div>
+        </article>
+        <article class="card reveal">
+          <div class="card-badge">AI</div>
+          <h3>Early Detection of Cancer using AI</h3>
+          <p>Conceptual ML workflow for early cancer detection by analysing medical images and patient data to assist human experts.</p>
+          <div class="tagline">Python • ML (Concept)</div>
+        </article>
+      </div>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="section container contact">
       <h2 class="section-title">Contact</h2>
       <p class="lead">Let’s talk about your next idea or internship opportunity.</p>
-      
       <div class="contact-cards">
-        <a class="card glass reveal" href="mailto:sanjaychennuri1418@gmail.com" target="_blank" rel="noopener noreferrer">
-          <strong>Email:</strong> <span>sanjaychennuri1418@gmail.com</span>
-        </a>
-        <a class="card glass reveal" href="tel:+919390544485">
-          <strong>Phone:</strong> <span>+91 93905 44485</span>
-        </a>
-        <a class="card glass reveal" href="https://linkedin.com/in/sanjeevchennuri" target="_blank" rel="noopener noreferrer">
-          <strong>LinkedIn:</strong> <span>/in/sanjeevchennuri</span>
-        </a>
-        <a class="card glass reveal" href="https://github.com/sanjaychennuri" target="_blank" rel="noopener noreferrer">
-          <strong>GitHub:</strong> <span>/sanjaychennuri</span>
-        </a>
-        <a class="card glass reveal" href="resume.pdf" target="_blank" rel="noopener noreferrer">
-          <strong>Resume:</strong> <span>Resume</span>
-        </a>
+        <a class="card glass reveal" href="mailto:sanjaychennuri1418@gmail.com" target="_blank" rel="noopener noreferrer"><strong>Email:</strong> <span>sanjaychennuri1418@gmail.com</span></a>
+        <a class="card glass reveal" href="tel:+919390544485"><strong>Phone:</strong> <span>+91 93905 44485</span></a>
+        <a class="card glass reveal" href="https://linkedin.com/in/sanjeevchennuri" target="_blank" rel="noopener noreferrer"><strong>LinkedIn:</strong> <span>/in/sanjeevchennuri</span></a>
+        <a class="card glass reveal" href="https://github.com/sanjaychennuri" target="_blank" rel="noopener noreferrer"><strong>GitHub:</strong> <span>/sanjaychennuri</span></a>
+        <a class="card glass reveal" href="resume.pdf" target="_blank" rel="noopener noreferrer"><strong>Resume:</strong> <span>Resume</span></a>
       </div>
     </section>
   </main>
@@ -155,4 +194,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
